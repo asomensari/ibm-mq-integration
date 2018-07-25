@@ -1,0 +1,18 @@
+name: com. expertservices.ibm-mq
+description: Reports status and metrics for ibm-mq service
+protocol_version: 1
+os: linux
+
+commands:
+  mqmetrics:
+    command:
+      - ./bin/newrelic-ibm-mq
+      - --metrics
+    interval: 15
+
+#  inventory:
+#    command:
+#      - ./bin/newrelic-ibm-mq
+#      - --inventory
+#    prefix: config/newrelic-ibm-mq
+#    interval: 15
